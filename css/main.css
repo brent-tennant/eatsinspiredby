@@ -173,7 +173,7 @@ aside .sidebar{
         text-decoration: none;
         color: #333333;
       }
-/*****MAIN CONTENT*****/
+/*****RECIPE INDEX CONTENT*****/
 .main-content{
   width: 100%;
   clear: both;
@@ -185,7 +185,7 @@ aside .sidebar{
     height: auto;
     border: 5px solid #333333;
   }
-/*****FEED ITEMS*****/
+/*****RECIPE FEED ITEMS*****/
 article{
   width: 100%;
   clear: both;
@@ -204,6 +204,24 @@ article{
     height: auto;
     border: 5px solid #333333;
   }
+/********BIO********/
+.bio{
+
+}
+  .bio h2{
+
+  }
+.fav-inspirations{
+
+}
+.inspirations{
+
+}
+  .inspirations h3{
+
+  }
+/********RECIPES********/
+
 /*****FOOTER*****/
 footer{
   font-family: 'Over the Rainbow', cursive;
