@@ -206,18 +206,24 @@ article{
   }
 /********BIO********/
 .bio{
+  width: 96%;
+  padding: 2%;
 
 }
-  .bio h2{
+  .bio h3{
+    font-family: 'Over the Rainbow', cursive;
+    text-transform: lowercase;
+
 
   }
-.fav-inspirations{
+.fav-inspirations h2{
 
 }
 .inspirations{
 
 }
   .inspirations h3{
+    font-family: 'Over the Rainbow', cursive;
 
   }
 /********RECIPES********/
