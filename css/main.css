@@ -175,15 +175,27 @@ aside .sidebar{
       }
 /*****RECIPE INDEX CONTENT*****/
 .main-content{
-  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: baseline;
+  width: 90%;
+  margin: 0 2.5% 20px 4.5%;
   clear: both;
+  text-align: center;
+  box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+  border: 1px solid #333;
   }
   .main-img{
     min-width: 150px;
     max-width: 450px;
-    padding-left: 0.5%;
     height: auto;
-    border: 5px solid #333333;
+    border: 1px solid #333333;
+  }
+  .container{
+    padding: 5px;
+    background: #fff;
   }
 /*****RECIPE FEED ITEMS*****/
 article{
@@ -192,29 +204,46 @@ article{
   text-align: center;
 }
  .feed-item{
-    width:45%;
+    width:40%;
     height: auto;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
     float: left;
   }
   .feed-img{
     min-width: 75px;
     max-width: 250px;
     height: auto;
-    border: 5px solid #333333;
+    border: 2px solid #333333;
+    box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
   }
 /********BIO********/
 .bio{
   width: 96%;
   padding: 2%;
-
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 1.125em;
 }
   .bio h3{
     font-family: 'Over the Rainbow', cursive;
     text-transform: lowercase;
-
-
+  }
+  .bio .bio-img img{
+    border-radius: 50%;
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 5px 0 10px 0;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 1px 6px 20px 1.5px rgba(0, 0, 0, 0.19);
+  }
+  .about-img img{
+    border-radius: 25%;
+    max-width: 450px;
+    width: 100%;
+    border: 1.5px solid #333;
+    margin: 10px 0 10px 0;
+    box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
   }
 .fav-inspirations h2{
 
