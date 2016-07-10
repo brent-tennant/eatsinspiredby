@@ -141,6 +141,7 @@ header{
   }
   nav ul{
       -webkit-padding-start: 0px;
+      box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
     }
     nav ul li{
       list-style: none;
@@ -209,13 +210,21 @@ article{
     margin-left: 5%;
     margin-right: 5%;
     float: left;
+    margin: 0 2.5% 20px 4.5%;
+    border: 1px solid #333;
+    box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
   }
+    .feed-item .container{
+      padding: 2px;
+    }
+      .feed-item .container h3{
+        font-size: .875em;
+      }
   .feed-img{
     min-width: 75px;
     max-width: 250px;
     height: auto;
-    border: 2px solid #333333;
-    box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+    border: 1px solid #333333;
   }
 /********BIO********/
 .bio{
@@ -309,30 +318,6 @@ footer{
             text-decoration: none;
             color: #333333;
           }
-/*footer nav{
-  width: 94%;
-  justify-content: center;
-  align-items: baseline;
-}
-  footer nav ul{
-    -webkit-padding-start: 0px;
-  }
-    footer nav ul li{
-      list-style: none;
-      padding: 10px;
-      text-align: center;
-      border: 1px solid #eeeeee;
-      }
-      footer nav ul li a{
-        text-decoration: none;
-        color: #333333;
-      }*/
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -436,6 +421,9 @@ footer{
   nav{
     width:auto;
   }
+    nav ul{
+      box-shadow: none;
+    }
   nav ul li{
     list-style: none;
     display: inline-block;
@@ -461,35 +449,100 @@ footer{
             text-decoration: none;
             color: #333333;
           }
-    /*****Home Page CONTENT*****/
-    .main-content{
-      width: 75%;
-      float: left;
-      clear: right;
-      }
+    /*****RECIPE INDEX CONTENT*****/
+      .main-content{
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: baseline;
+        width: 35%;
+        margin: 0 2.5% 20px 4.5%;
+        clear: both;
+        text-align: center;
+        box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+        border: 1px solid #333;
+        }
       .main-img{
         min-width: 150px;
-        max-width: 450px;
+        max-width: 600px;
         height: auto;
-        border: 5px solid #eeeeee;
-      }
-    /*****Home Page FEED ITEMS*****/
-    article{
-      width: 100%;
-      clear: both;
-    }
-     .feed-item{
-        width:25%;
+        border: 1px solid #333333;
+        }
+      .container{
+        padding: 5px;
+        background: #eee;
+        text-align: center;
+        width: auto;
         height: auto;
-        padding-right: 30px;
-        float: left;
-      }
-      .feed-img{
-        min-width: 75px;
-        max-width: 250px;
-        height: auto;
-        border: 5px solid #eeeeee;
-      }
+        }
+    /*****RECIPE FEED ITEMS*****/
+       article{
+         width: 98%;
+         height: auto;
+         clear: both;
+         text-align: center;
+          }
+       .feed-item{
+          width:20%;
+          height: auto;
+          margin-left: 20%;
+          margin-right: 20%;
+          float: left;
+          margin: 0 2.5% 20px 4.5%;
+          border: 1px solid #333;
+          box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+          }
+          .feed-item .container{
+            padding: 4px;
+            width: auto;
+            height: auto;
+          }
+            .feed-item .container h3{
+              font-size: .875em;
+            }
+        .feed-img{
+          min-width: 75px;
+          max-width: 300px;
+          height: auto;
+          border: 1px solid #333333;
+         }
+    /********BIO********/
+      .bio{
+        width: 96%;
+        padding: 2%;
+        text-align: center;
+        line-height: 1.6em;
+        font-size: 1.125em;
+        }
+        .bio h3{
+          font-family: 'Over the Rainbow', cursive;
+          text-transform: lowercase;
+        }
+          .bio .bio-img img{
+            border-radius: 50%;
+            max-width: 450px;
+            width: 100%;
+            border: 1px solid #333;
+            margin: 5px 0 10px 0;
+            box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 1px 6px 20px 1.5px rgba(0, 0, 0, 0.19);
+          }
+          .about-img img{
+            border-radius: 25%;
+            max-width: 450px;
+            width: 100%;
+            border: 1.5px solid #333;
+            margin: 10px 0 10px 0;
+            box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+          }
+        .fav-inspirations h2{
+        }
+        .inspirations{
+
+        }
+          .inspirations h3{
+            font-family: 'Over the Rainbow', cursive;
+  }
     /*****FOOTER*****/
     footer{
       width: 96%;
