@@ -174,7 +174,7 @@ aside .sidebar{
         text-decoration: none;
         color: #333333;
       }
-      aside .n-posts{
+      aside .recent-posts .feed-item{
         display: none;
       }
         aside .recent-posts .feed-item .feed-img{
@@ -494,7 +494,7 @@ footer{
         }
         aside .n-posts .n-posts-item{
           display: inline-block;
-          width: 98%;
+          width: 100%;
           margin: 0px;
           border: 0px;
           border-bottom: 1px dotted #444;
@@ -504,7 +504,7 @@ footer{
             width: 25%;
             border: 0px;
             display: inline-block;
-            padding-bottom: 5px;
+            padding-bottom: 5
           }
             aside .n-posts .n-posts-item .n-posts-container{
               display: inline-block;
@@ -557,7 +557,7 @@ footer{
       .main-content{
         width: 40%;
         float: left;
-        margin: 0 55px 20px 35px;
+        margin: 0 5.5% 20px 3%;
         box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
         border: 1px solid #333;
         }
@@ -579,7 +579,7 @@ footer{
           float: left;
           margin-left: 5%;
           margin-right: 5%;
-          margin: 0 35px 50px 32.5px;
+          margin: 0 35px 48px 32.5px;
           border: 1px solid #333;
           box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
           }
