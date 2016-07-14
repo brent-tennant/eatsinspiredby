@@ -174,13 +174,33 @@ aside .sidebar{
         text-decoration: none;
         color: #333333;
       }
+      aside .n-posts{
+        display: none;
+      }
+        aside .recent-posts .feed-item .feed-img{
+        }
+          aside .recent-posts .feed-item .container{
+          }
+      aside .tags{
+        float: right;
+        display: none;
+      }
+        aside .tags ul{
+        }
+          aside .tags ul  li{
+            width: 20px;
+            border: 1px solid #333;
+            list-style: none;
+            background-color: #eee;
+            padding-right: 4px;
+          }
 /*****RECIPE INDEX CONTENT*****/
-.main-content{
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: baseline;
+article{
+  width: 100%;
+  display: inline-block;
+  }
+  .main-content{
+  display: inline-block;
   width: 90%;
   margin: 0 2.5% 20px 4.5%;
   clear: both;
@@ -190,7 +210,7 @@ aside .sidebar{
   }
   .main-img{
     min-width: 150px;
-    max-width: 450px;
+    max-width: 750px;
     height: auto;
     border: 1px solid #333333;
   }
@@ -199,30 +219,32 @@ aside .sidebar{
     background: #fff;
   }
 /*****RECIPE FEED ITEMS*****/
-article{
-  width: 100%;
+article section .feed{
+  width: 96%;
+  display: inline-block;
   clear: both;
   text-align: center;
+  margin: 30px 1.98% 30px 1.98%;
 }
  .feed-item{
     width:40%;
     height: auto;
-    margin-left: 5%;
-    margin-right: 5%;
     float: left;
-    margin: 0 2.5% 20px 4.5%;
+    margin: 0 4.5% 20px 4.5%;
     border: 1px solid #333;
+    text-align: center;
     box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
   }
     .feed-item .container{
-      padding: 2px;
+      height: 60px;
     }
       .feed-item .container h3{
         font-size: .875em;
+        margin: 0px;
       }
   .feed-img{
     min-width: 75px;
-    max-width: 250px;
+    max-width: 550px;
     height: auto;
     border: 1px solid #333333;
   }
@@ -431,10 +453,16 @@ footer{
     border: none;
     }
     /*****SIDEBAR*****/
-    aside .sidebar{
-        width: 25%;
+    aside{
+        width: 20%;
         float: right;
         clear: both;
+        padding-right: 2%;
+        min-width: 75px;
+      }
+      aside .sidebar{
+        margin-bottom: 40px;
+        width: 90%;
       }
       aside .sidebar ul{
         -webkit-padding-start: 0px;
@@ -449,57 +477,120 @@ footer{
             text-decoration: none;
             color: #333333;
           }
+      aside .n-posts{
+        float: right;
+        width: 90%;
+        min-width: 75px;
+        height: auto;
+        border: 1px solid #333;
+        box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+        margin-bottom: 50px;
+      }
+        aside .n-posts h3{
+          font-family: 'Over the Rainbow', cursive;
+          text-align: center;
+          border-bottom: 1px dotted #444;
+          margin-bottom: 5px;
+        }
+        aside .n-posts .n-posts-item{
+          display: inline-block;
+          width: 98%;
+          margin: 0px;
+          border: 0px;
+          border-bottom: 1px dotted #444;
+          margin: 5px;
+        }
+          aside .n-posts .n-posts-item .n-posts-img{
+            width: 25%;
+            border: 0px;
+            display: inline-block;
+            padding-bottom: 5px;
+          }
+            aside .n-posts .n-posts-item .n-posts-container{
+              display: inline-block;
+              border: 0px;
+              margin: auto;
+              padding: 5px;
+            }
+            aside .n-posts .n-posts-item .n-posts-container h3{
+              font-family: 'Lora', serif;
+              border-bottom: 0px;
+            }
+      aside .tags{
+        float: right;
+        display: inline-block;
+        width: 90%;
+        min-width: 75px;
+        border: 1px solid #333;
+        box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+      }
+        aside .tags h3{
+          font-family: 'Over the Rainbow', cursive;
+          text-align: center;
+          border-bottom: 1px dotted #444;
+          padding-bottom: 10px;
+        }
+        aside .tags ul{
+          padding: 5px 5px 5px 15px;
+          display:flex;
+          flex-flow: wrap;
+          justify-content: center;
+          align-items: stretch;
+        }
+          aside .tags ul  li{
+            margin: 8px;
+            padding: 2px;
+            clear: both;
+            width: auto;
+            border: 1px solid #333;
+            list-style: none;
+            background-color: #fff;
+            padding-right: 4px;
+          }
     /*****RECIPE INDEX CONTENT*****/
+    article{
+      display:inline-block;
+      width: 74.9%;
+      clear: both;
+      padding-top: 50px;
+       }
       .main-content{
-        display: -webkit-flex;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: baseline;
-        width: 35%;
-        margin: 0 2.5% 20px 4.5%;
-        clear: both;
-        text-align: center;
+        width: 40%;
+        float: left;
+        margin: 0 55px 20px 35px;
         box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
         border: 1px solid #333;
         }
-      .main-img{
-        min-width: 150px;
-        max-width: 600px;
-        height: auto;
-        border: 1px solid #333333;
-        }
-      .container{
-        padding: 5px;
-        background: #eee;
-        text-align: center;
-        width: auto;
-        height: auto;
-        }
-    /*****RECIPE FEED ITEMS*****/
-       article{
-         width: 98%;
-         height: auto;
-         clear: both;
-         text-align: center;
-          }
-       .feed-item{
-          width:20%;
+        .main-img{
+          min-width: 150px;
+          max-width: 600px;
           height: auto;
-          margin-left: 20%;
-          margin-right: 20%;
+          border: 1px solid #333333;
+        }
+        .container{
+          padding: 5px 0px 5px 0px;
+          background: #eee;
+          text-align: center;
+          width: 100%;
+          }
+    /*****RECIPE FEED ITEMS*****/
+       .feed-item{
+          width: 18%;
           float: left;
-          margin: 0 2.5% 20px 4.5%;
+          margin-left: 5%;
+          margin-right: 5%;
+          margin: 0 35px 50px 32.5px;
           border: 1px solid #333;
           box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
           }
           .feed-item .container{
-            padding: 4px;
-            width: auto;
+            padding: 4px 0px 4px 0px;
+            width: 100%;
             height: auto;
           }
             .feed-item .container h3{
               font-size: .875em;
+              text-align: center;
             }
         .feed-img{
           min-width: 75px;
@@ -521,7 +612,7 @@ footer{
         }
           .bio .bio-img img{
             border-radius: 50%;
-            max-width: 450px;
+            max-width: 350px;
             width: 100%;
             border: 1px solid #333;
             margin: 5px 0 10px 0;
@@ -529,7 +620,7 @@ footer{
           }
           .about-img img{
             border-radius: 25%;
-            max-width: 450px;
+            max-width: 350px;
             width: 100%;
             border: 1.5px solid #333;
             margin: 10px 0 10px 0;
