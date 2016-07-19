@@ -174,12 +174,15 @@ aside .sidebar{
         text-decoration: none;
         color: #333333;
       }
-      aside .recent-posts .feed-item{
+      aside .n-posts{
         display: none;
       }
-        aside .recent-posts .feed-item .feed-img{
+      aside .n-posts .n-posts-item{
+        display: none;
+      }
+        aside .n-posts .n-posts-item .n-posts-img{
         }
-          aside .recent-posts .feed-item .container{
+          aside .n-posts .n-posts-item .n-posts-container{
           }
       aside .tags{
         float: right;
@@ -249,12 +252,17 @@ article section .feed{
     border: 1px solid #333333;
   }
 /********BIO********/
-.bio{
+article .bio, .fav-inspirations{
   width: 96%;
   padding: 2%;
   text-align: center;
   line-height: 1.6em;
-  font-size: 1.125em;
+  font-size: .75em;
+}
+.bio .main-content{
+  background: none;
+  border: none;
+  box-shadow: none;
 }
   .bio h3{
     font-family: 'Over the Rainbow', cursive;
@@ -275,6 +283,9 @@ article section .feed{
     border: 1.5px solid #333;
     margin: 10px 0 10px 0;
     box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+  }
+  .fav-inspirations{
+
   }
 .fav-inspirations h2{
 
@@ -480,7 +491,9 @@ footer{
           }
       aside .n-posts{
         float: right;
+        display: inline-block;
         width: 90%;
+        clear: both;
         min-width: 75px;
         height: auto;
         border: 1px solid #333;
@@ -519,6 +532,7 @@ footer{
             }
       aside .tags{
         float: right;
+        clear: both;
         display: inline-block;
         width: 90%;
         min-width: 75px;
@@ -613,18 +627,64 @@ footer{
           border: 1px solid #333333;
          }
     /********BIO********/
+    article .bio{
+      padding-top: 0px;
+    }
       .bio{
-        width: 96%;
-        padding: 2%;
+        width: 94%;
+        height: auto;
+        padding: 0% 2% 2% 2%;
         text-align: center;
         line-height: 1.6em;
         font-size: 1.125em;
+        display: inline-block;
+        float: left;
+        clear: both;
         }
-        .bio h3{
+        .bio .main-content{
+          clear: both;
+          float: left;
+          font-size: 1em;
+          display: inline-block;
+          padding-bottom:0px;
+          background: none;
+          border: none;
+        }
+        .bio .main-content h3{
+          margin: 0px;
+          font-size: 2.25em;
+          text-align: center;
+          display: inline-block;
+          margin-bottom: 20px;
+        }
+        .bio .main-content p{
+          width: 40%;
+          margin-top: 50px;
+          display: inline-block;
+          font-size: 1em;
+          line-height: 1.75em;
+        }
+        .bio .main-content .bio-img img{
+          float: left;
+          margin: 0 5% 5% 5%;
+          min-width: 150px;
+          max-width: 600px;
+          width: 30%;
+          height: auto;
+          border:none;
+          clear: both;
+        }
+        .bio-container{
+          width: 22%;
+          margin: 0px 2% 1% 1%;
+          display: inline-block;
+          float: left;
+        }
+        .bio-container h3{
           font-family: 'Over the Rainbow', cursive;
           text-transform: lowercase;
         }
-          .bio .bio-img img{
+          .bio-container .bio-img img{
             border-radius: 50%;
             max-width: 350px;
             width: 100%;
@@ -640,10 +700,33 @@ footer{
             margin: 10px 0 10px 0;
             box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
           }
-        .fav-inspirations h2{
+          #foodspirations{
+            width: 96%;
+            background: #eee;
+            padding: 1.5%;
+            clear: both;
+            border: 1px solid #333;
+            box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+
+          }
+        .fav-inspirations{
+          width: 115%;
+          display: inline-block;
+          float: left;
+          clear: both;
         }
         .inspirations{
-
+          width: 45%;
+          margin: 0px 2% 1% 1%;
+          display: inline-block;
+        }
+        .inspirations .about-img img{
+          border-radius: 25%;
+          max-width: 250px;
+          width: 100%;
+          border: 1.5px solid #333;
+          margin: 10px 0 10px 0;
+          box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
         }
           .inspirations h3{
             font-family: 'Over the Rainbow', cursive;
