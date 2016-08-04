@@ -135,6 +135,7 @@ header{
       text-decoration: none;
       color: #333333;
     }
+    /*Change format display: inline-block; above header*/
   nav{
     font-weight: 600;
     width: 94%;
@@ -298,20 +299,42 @@ article .bio, .fav-inspirations{
 
   }
 /********RECIPES********/
+#recipe{
+  width: 90%;
+  margin: 0 2.5% 20px 4.5%;
+  clear: both;
+  text-align: center;
+  }
+  #recipe header{
+    padding-top: 0px;
+  }
+.date-tags{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+  .date-tags a{
+    text-decoration: none;
+    color: #333;
+  }
 .recipe-page{
-
 }
   .recipe-page .recipe-img{
-
+    box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
+    border: 1px solid #333;
   }
     .recipe-page .recipe-img img{
+      min-width: 150px;
+      max-width: 750px;
+      height: auto;
+      border: 1px solid #333333;
 
     }
   .recipe-page .content{
 
   }
   .recipe-page .recipe{
-    
+
   }
 
 /*****FOOTER*****/
