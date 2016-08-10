@@ -112,12 +112,13 @@ img{
   width: 100%;
   height: auto;
 }
+img:hover, i:hover, a:hover{
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
+}
 a{
   color: #333;
   text-decoration: none;
-}
-a:hover{
-  color: #0059b3;
 }
 /*****HEADER******/
 header{
@@ -221,6 +222,10 @@ article{
   }
   .main-content h1{
     line-height: 1.2em;
+    font-family: 'Over the Rainbow', cursive;
+  }
+  .main-content .date-tags{
+    font-family: 'Over the Rainbow', cursive;
   }
   .main-img{
     min-width: 150px;
@@ -237,7 +242,8 @@ article{
       color: #333
     }
     .container a:hover{
-      color: #0059b3;
+      -webkit-filter: opacity(50%);
+      filter: opacity(50%);
     }
 /*****RECIPE FEED ITEMS*****/
 article section .feed{
@@ -357,10 +363,13 @@ article .bio, .fav-inspirations{
     background: #fff;
     margin-bottom: 40px;
   }
+    .recipe-page .recipe .container h3{
+      font-family: 'Over the Rainbow', cursive;
+    }
     .recipe-page .recipe ul li{
       text-align: left;
     }
-  .recipe-page .recipe h3{
+  .recipe-page .recipe h2{
     font-family: 'Over the Rainbow', cursive;
     text-align: center;
   }
@@ -642,6 +651,10 @@ footer{
         box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
         border: 1px solid #333;
         background: #eee;
+        line-height: 1.6em;
+        }
+        .main-content .container .date-tags{
+          margin-bottom: 10%;
         }
         .main-img{
           float: left;
@@ -650,7 +663,7 @@ footer{
           max-width: 600px;
           width: 40%;
           height: auto;
-          border:none;
+          border:1px solid #333;
           box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
         }
         .container{
@@ -799,7 +812,6 @@ footer{
   }
   /********RECIPES********/
   article #recipe{
-
   }
   #recipe{
     width: 94%;
@@ -830,19 +842,21 @@ footer{
     clear: both;
   }
     .recipe-page .recipe-img{
-      width: 40%;
-      margin-left: 29%;
+      width: 50%;
+      margin-left: 25%;
       box-shadow: .75px 4px 8px .75px rgba(0, 0, 0, 0.2), 1px 6px 20px 1px rgba(0, 0, 0, 0.19);
       border: 1px solid #333;
       clear: both;
     }
       .recipe-page .recipe-img img{
         min-width: 150px;
-        max-width: 600px;
+        max-width: 700px;
         height: auto;
       }
       .recipe-page .recipe p{
         clear: both;
+        margin-top: 40px;
+        margin-bottom: 40px;
       }
     .recipe-page .recipe .container{
       width: 42%;
@@ -850,6 +864,7 @@ footer{
       border: 1px solid #333;
       padding: 5px;
       background: #fff;
+      margin-left: 2%;
       margin-right: 4%;
       margin-bottom: 40px;
       display: inline-block;
@@ -857,9 +872,11 @@ footer{
       .recipe-page .recipe ul li{
         text-align: left;
       }
-    .recipe-page .recipe h3{
+    .recipe-page .recipe h2{
+      padding-top: 60px;
       font-family: 'Over the Rainbow', cursive;
       text-align: center;
+      padding-bottom: 60px;
     }
     /*****FOOTER*****/
     footer{
